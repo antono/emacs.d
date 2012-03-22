@@ -1,0 +1,90 @@
+
+[clojure-mode]
+checkout = git clone 'git://github.com/technomancy/clojure-mode.git' 'clojure-mode'
+
+[coffee-mode]
+checkout = git clone 'git://github.com/defunkt/coffee-mode.git' 'coffee-mode'
+
+[cucumber.el]
+checkout = git clone 'https://github.com/michaelklishin/cucumber.el.git' 'cucumber.el'
+
+[egg]
+checkout = git clone 'git://github.com/byplayer/egg.git' 'egg'
+
+[evil]
+checkout = git clone 'git://gitorious.org/evil/evil.git' 'evil'
+
+[evil-numbers]
+checkout = git clone 'https://github.com/cofi/evil-numbers.git' 'evil-numbers'
+
+[evil-surround]
+checkout = git clone 'https://github.com/timcharper/evil-surround.git' 'evil-surround'
+
+[evil-rails]
+checkout = git clone 'git@github.com:antono/evil-rails.git' 'evil-rails'
+
+[dictionary-el]
+checkout = git clone 'git://github.com/myrkr/dictionary-el.git' 'dictionary-el'
+
+[mark-multiple]
+checkout = git clone 'https://github.com/magnars/mark-multiple.el' 'mark-multiple'
+
+[minimap]
+checkout = git clone 'git://randomsample.de/minimap.git' 'minimap'
+
+[org-mode]
+checkout = git clone 'git://orgmode.org/org-mode.git' 'org-mode'
+
+[nxhtml]
+checkout = bzr branch 'bzr+ssh://bazaar.launchpad.net/%2Bbranch/nxhtml/' 'nxhtml'
+
+[geiser]
+checkout = git clone 'https://github.com/jaor/geiser.git' 'geiser'
+
+[helm]
+checkout = git clone 'https://github.com/emacs-helm/helm.git' 'helm'
+
+[rudel]
+checkout = bzr branch 'bzr://rudel.bzr.sourceforge.net/bzrroot/rudel/trunk/' 'rudel'
+
+[eproject]
+checkout = git clone 'git://github.com/jrockway/eproject.git' 'eproject'
+
+[expand-region]
+checkout = git clone 'git://github.com/magnars/expand-region.el.git' 'expand-region'
+
+[haml-mode]
+checkout = git clone 'https://github.com/nex3/haml-mode.git' 'haml-mode'
+
+[jade-mode]
+checkout = git clone 'https://github.com/brianc/jade-mode.git' 'jade-mode'
+
+[js3-mode]
+checkout = git clone 'https://github.com/thomblake/js3-mode.git' 'js3-mode'
+
+[magit]
+checkout = git clone 'git://github.com/magit/magit.git' 'magit'
+
+[mo-git-blame]
+checkout = git clone 'git://github.com/mbunkus/mo-git-blame.git' 'mo-git-blame'
+
+[multiple-cursors]
+checkout = git clone 'https://github.com/magnars/multiple-cursors.el' 'multiple-cursors'
+
+[rinari]
+checkout = git clone 'git://github.com/eschulte/rinari.git' 'rinari'
+
+[rsense]
+checkout = git clone 'git://github.com/m2ym/rsense.git' 'rsense'
+
+[rspec-mode]
+checkout = git clone 'git://github.com/pezra/rspec-mode.git' 'rspec-mode'
+
+[sass-mode]
+checkout = git clone 'https://github.com/nex3/sass-mode.git' 'sass-mode'
+
+[scss-mode]
+checkout = git clone 'https://github.com/antonj/scss-mode.git' 'scss-mode'
+
+[undo-tree]
+checkout = git clone 'http://www.dr-qubit.org/git/undo-tree.git' 'undo-tree'
