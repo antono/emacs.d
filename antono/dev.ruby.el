@@ -13,7 +13,7 @@
 
 (mapcar (lambda (pattern)
           (add-to-list 'auto-mode-alist `(,pattern . ruby-mode)))
-        '("Gemfile" "config.ru" "Rakefile" "Guardfile" "Capfile" "*\.rb" "*\.rake" "*\.gemspec"))
+        '("Gemfile$" "config.ru$" "Rakefile$" "Guardfile$" "Capfile$" "*\.rb" "\\.rake$" "\\.gemspec$"))
 
 (add-to-list 'auto-mode-alist '("\\.ya?ml$"   . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.md$"      . markdown-mode))
