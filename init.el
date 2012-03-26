@@ -1,48 +1,54 @@
 (server-start)
 
-;; 
-;; Setup base path
-;; 
-
+;;
+;; Setup base path relative to this file
+;;
 (defconst dotfiles-dir
   (file-name-directory (or (buffer-file-name) load-file-name))
   "A place where Emacs dotfiles placed.")
 
+(setq user-emacs-directory
+  (concat dotfiles-dir (file-name-as-directory "var")))
+
 (add-to-list 'load-path dotfiles-dir)
 
+
+;;
+;; Place for my configs
+;;
 (defconst user-specific-dir
   (concat dotfiles-dir user-login-name)
   "You can keep Your customizations here, all will be autoloaded.")
 
 (add-to-list 'load-path user-specific-dir)
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/twilight-theme")
-
+;;
 ;; Add all dirs from 'vendor' to load-path
+;;
 (defun reload-vendor ()
   "Adds all paths from ~/.emacs.d/vendor to load-path"
   (interactive)
   (let ((vendor-path (concat (file-name-as-directory dotfiles-dir) "vendor")))
     (dolist (dir (directory-files vendor-path t))
-      (if (file-directory-p dir) 
+      (if (file-directory-p dir)
           (add-to-list 'load-path dir)))))
 
 (reload-vendor)
 
+;;
 ;; Package.el
-(setq package-archives '(("ELPA" . "http://tromey.com/elpa/") 
-                         ("GNU" . "http://elpa.gnu.org/packages/")
+;;
+(setq package-archives '(("ELPA"      . "http://tromey.com/elpa/")
+                         ("GNU"       . "http://elpa.gnu.org/packages/")
                          ("Marmalade" . "http://marmalade-repo.org/packages/")))
 
+
 (defconst package-user-dir
-  (concat dotfiles-dir (file-name-as-directory "var") "elpa"))
+  (concat user-emacs-directory "elpa"))
 (defconst autoload-file
-  (concat dotfiles-dir (file-name-as-directory "var") "loaddefs.el"))
+  (concat user-emacs-directory "loaddefs.el"))
 (defconst custom-file
-  (concat dotfiles-dir (file-name-as-directory "var") "custom.el"))
-(setq user-emacs-directory
-  (concat dotfiles-dir (file-name-as-directory "var")))
+  (concat user-emacs-directory "custom.el"))
 
 (package-initialize)
 
