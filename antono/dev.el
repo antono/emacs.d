@@ -45,7 +45,6 @@
 (add-hook 'coding-hook 'turn-on-save-place-mode)
 (add-hook 'coding-hook 'pretty-lambdas)
 (add-hook 'coding-hook 'add-watchwords)
-(add-hook 'coding-hook 'turn-on-paredit)
 
 (defun run-coding-hook ()
   "Enable things that are convenient across all coding buffers."
