@@ -28,13 +28,7 @@
      (define-key ruby-mode-map (kbd "C-h r") 'yari)))
 
 (add-hook 'ruby-mode-hook 'run-coding-hook)
-(add-hook 'ruby-mode-hook 'setup-ruby-mode)
-;; (add-hook 'rinari-minor-mode-hook 'rvm-activate-corresponding-ruby)
 
-(defun setup-ruby-mode ()
-  "TODO: check buffer name"
-  (rspec-mode 1)
-  (ruby-electric-mode 1))
 
 ;;
 ;; Rinari (Minor Mode for Ruby On Rails)
