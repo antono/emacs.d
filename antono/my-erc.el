@@ -2,7 +2,6 @@
 (defun start-irc ()
   "Connect to IRC."
   (interactive)
-  
   (setq erc-autojoin-channels-alist
         '(("freenode.net"
            "#emacs"
@@ -85,13 +84,13 @@
   (replace-regexp-in-string "<" "&lt;"
   (replace-regexp-in-string ">" "&gt;" s)))))))
 
-(defun call-libnotify (matched-type nick msg)
-  (ignore-errors
-    (let* ((cmsg  (split-string (clean-message msg)))	      
-           (nick   (first (split-string nick "!")))
-           (msg    (mapconcat 'identity (rest cmsg) " ")))
-      (shell-command-to-string
-       (format "notify-send -i /usr/share/icons/hicolor/scalable/apps/emacs23.svg '%s says:' '%s'"
-               nick msg)))))
+(require 'notifications)
+(defun erc-global-notify (match-type nick message)
+  "Notify when a message is recieved."
+  (notifications-notify
+   :title nick
+   :body message
+   :app-icon "/usr/share/notify-osd/icons/gnome/scalable/status/notification-message-im.svg"
+   :urgency 'low))
 
-(add-hook 'erc-text-matched-hook 'call-libnotify)
+(add-hook 'erc-text-matched-hook 'erc-global-notify)
