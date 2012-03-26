@@ -1,4 +1,4 @@
-(global-set-key (kbd "M-x")     'helm-M-x)
+(global-set-key (kbd "M-x")     'smex)
 (global-set-key (kbd "s-l")     'helm-mini)
 (global-set-key (kbd "s-i")     'helm-imenu)
 
