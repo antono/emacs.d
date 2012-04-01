@@ -88,3 +88,6 @@ checkout = git clone 'https://github.com/antonj/scss-mode.git' 'scss-mode'
 
 [undo-tree]
 checkout = git clone 'http://www.dr-qubit.org/git/undo-tree.git' 'undo-tree'
+
+[sauron]
+checkout = git clone 'git://github.com/djcb/sauron.git' 'sauron'
