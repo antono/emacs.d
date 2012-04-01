@@ -21,8 +21,6 @@
 (defun eshell/open (file)
   (find-file file))
 
-
-
 ;;; Vi
 (defun eshell/vi (&rest args)
   "Invoke `find-file' on the file.
