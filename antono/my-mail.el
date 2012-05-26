@@ -8,7 +8,7 @@
 (setq user-full-name "Antono Vasiljev"
       user-mail-address "self@antono.info"
       mail-reply-to user-mail-address 
-      message-signature "http://antono.info\n"
+      message-signature "http://shelr.tv - plain text screencasts for unix ninjas"
       mu4e-user-mail-address-regexp "self@antono\.info"
       mu4e-mu-binary     "~/.local/homemade/mu/master/bin/mu"
       mu4e-maildir       "~/Maildir"
