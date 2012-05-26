@@ -2,7 +2,7 @@
 (require 'eproject-extras)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/eproject/contrib/")
-(require 'eproject-anything)
+(require 'helm-eproject)
 (require 'etags)
 (require 'eproject-tags)
 
