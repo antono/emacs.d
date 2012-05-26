@@ -11,7 +11,7 @@
 ;; (global-set-key (kbd "s-e")     'sr-speedbar-toggle)
 (global-set-key (kbd "s-b")     'eproject-ibuffer)
 (global-set-key (kbd "s-d")     'dictionary-search)
-(global-set-key (kbd "s-L")     'anything-eproject-files)
+(global-set-key (kbd "s-L")     'helm-eproject)
 (global-set-key (kbd "s-g")     'rgrep)
 (global-set-key (kbd "s-M")     'minimap-toggle)
 (global-set-key (kbd "<f7>")    'whitespace-mode)
