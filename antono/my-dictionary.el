@@ -1,6 +1,6 @@
 (require 'dictionary)
 
-(setq dictionary-server "dict.antono.info")
+(setq dictionary-server "localhost")
 
 (global-dictionary-tooltip-mode 1)
 (dictionary-tooltip-mode 1)
@@ -21,4 +21,3 @@
   "Display tooltips for the current word" t)
 (autoload 'global-dictionary-tooltip-mode "dictionary"
   "Enable/disable dictionary-tooltip-mode for all buffers" t)
-
