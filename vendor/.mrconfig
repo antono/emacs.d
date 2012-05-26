@@ -91,3 +91,6 @@ checkout = git clone 'http://www.dr-qubit.org/git/undo-tree.git' 'undo-tree'
 
 [sauron]
 checkout = git clone 'git://github.com/djcb/sauron.git' 'sauron'
+
+[dictem]
+checkout = git clone 'git://github.com/cheusov/dictem.git' 'dictem'
