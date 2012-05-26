@@ -21,7 +21,7 @@
 
 ;; Commands
 
-(evil-ex-define-cmd "W"     'write)
+(evil-ex-define-cmd "W"     'evil-write-all)
 (evil-ex-define-cmd "Tree"  'speedbar-get-focus)
 (evil-ex-define-cmd "linum" 'linum-mode)
 (evil-ex-define-cmd "align" 'align-regexp)
@@ -58,10 +58,10 @@
      ;; use the standard bindings as a base
      (evil-make-overriding-map mu4e-view-mode-map 'normal t)
      (evil-make-overriding-map mu4e-main-mode-map 'normal t)
-     (evil-make-overriding-map mu4e-hdrs-mode-map 'normal t)
+     (evil-make-overriding-map mu4e-headers-mode-map 'normal t)
      
      (evil-add-hjkl-bindings mu4e-view-mode-map 'normal
-       "J" 'mu4e-jump-to-maildir
+       "J" 'mu4e~headers-jump-to-maildir
        "j" 'evil-next-line
        "C" 'mu4e-compose-new
        "o" 'mu4e-view-message
@@ -73,18 +73,16 @@
      ;;   "C" 'mu4e-compose-new
      ;;   "q" 'mu4e-raw-view-quit-buffer)
      
-     (evil-add-hjkl-bindings mu4e-hdrs-mode-map 'normal
-       "J" 'mu4e-jump-to-maildir
+     (evil-add-hjkl-bindings mu4e-headers-mode-map 'normal
+       "J" 'mu4e~headers-jump-to-maildir
        "j" 'evil-next-line
        "C" 'mu4e-compose-new
        "o" 'mu4e-view-message
        )
      
      (evil-add-hjkl-bindings mu4e-main-mode-map 'normal
-       "J" 'mu4e-jump-to-maildir
+       "J" 'mu4e~headers-jump-to-maildir
        "j" 'evil-next-line
-       "J" 'mu4e-jump-to-maildir
        "RET" 'mu4e-view-message)
-     
      ))
 
