@@ -41,7 +41,7 @@
 
 (add-hook 'coding-hook 'local-column-number-mode)
 (add-hook 'coding-hook 'local-comment-auto-fill)
-(add-hook 'coding-hook 'turn-on-line-nmbers)
+;; (add-hook 'coding-hook 'turn-on-line-nmbers)
 (add-hook 'coding-hook 'turn-on-save-place-mode)
 (add-hook 'coding-hook 'pretty-lambdas)
 (add-hook 'coding-hook 'add-watchwords)
