@@ -5,6 +5,7 @@
 (global-set-key (kbd "C-S-s-l") 'helm-locate)
 (global-set-key (kbd "s-i")     'helm-imenu)
 (global-set-key (kbd "s-B")     'helm-bookmarks)
+(global-set-key (kbd "s-t")     'helm-top)
 
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
 (global-set-key (kbd "s-e")     'speedbar-get-focus)
