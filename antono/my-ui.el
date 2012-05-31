@@ -34,13 +34,14 @@
 (setq scroll-conservatively 5)
 (setq require-final-newline t)
 (setq next-line-add-newlines nil)
+(setq scroll-margin 0)
 
 
 (fringe-mode '(0 . 8)) ;; Right fringe only
 
 ;; Title and cursor
 (when window-system
-  (setq frame-title-format '(buffer-file-name "Evil: %f" ("%b")))
+  (setq frame-title-format '(buffer-file-name "Emacs: %f" ("%b")))
   (tooltip-mode t)
   (mouse-wheel-mode t)
   (blink-cursor-mode -1))
@@ -123,6 +124,11 @@
 
 (load-theme 'wombat)
 
+;; function defined only in my patched emacs. see patch:
+;; http://lists.gnu.org/archive/html/bug-gnu-emacs/2012-05/msg00862.html
+(if (fboundp 'application-prefer-dark-theme)
+    (application-prefer-dark-theme 1))
+
 ;; Draw line feed ^L as line!
 (require 'pp-c-l)
 
@@ -134,5 +140,3 @@
 (mouse-avoidance-mode 'banish)  ;; jump to corner when typing
 (mouse-avoidance-mode 'exile)   ;; jump to corner when approached
 (mouse-avoidance-mode 'animate)
-
-(require 'minimap)
