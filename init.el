@@ -22,7 +22,7 @@
 ;; Place for my configs
 ;;
 (defconst user-specific-dir
-  (concat dotfiles-dir user-login-name)
+  (concat dotfiles-dir "local")
   "You can keep Your customizations here, all will be autoloaded.")
 
 (add-to-list 'load-path user-specific-dir)
