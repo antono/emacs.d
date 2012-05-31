@@ -18,6 +18,7 @@
 (add-to-list 'auto-mode-alist '("\\.ya?ml$"   . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.md$"      . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
+(add-to-list 'auto-mode-alist '("\\.hamstache$" . haml-mode))
 
 (eval-after-load 'ruby-mode
   '(progn
