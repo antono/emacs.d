@@ -94,3 +94,6 @@ checkout = git clone 'git://github.com/djcb/sauron.git' 'sauron'
 
 [dictem]
 checkout = git clone 'git://github.com/cheusov/dictem.git' 'dictem'
+
+[perspective-el]
+checkout = git clone 'git://github.com/nex3/perspective-el.git' 'perspective-el'
