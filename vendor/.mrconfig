@@ -97,3 +97,30 @@ checkout = git clone 'git://github.com/cheusov/dictem.git' 'dictem'
 
 [perspective-el]
 checkout = git clone 'git://github.com/nex3/perspective-el.git' 'perspective-el'
+
+[yaml-mode]
+checkout = git clone 'git://github.com/yoshiki/yaml-mode.git' 'yaml-mode'
+
+[yari.el]
+checkout = git clone 'git://github.com/hron/yari.el.git' 'yari.el'
+
+[inf-ruby]
+checkout = git clone 'git://github.com/nonsequitur/inf-ruby.git' 'inf-ruby'
+
+[jump.el]
+checkout = git clone 'git://github.com/eschulte/jump.el.git' 'jump.el'
+
+[c-eldoc]
+checkout = git clone 'git://github.com/nflath/c-eldoc.git' 'c-eldoc'
+
+[dart-mode]
+checkout = git clone 'git://github.com/nex3/dart-mode.git' 'dart-mode'
+
+[rhtml]
+checkout = git clone 'git://github.com/eschulte/rhtml.git' 'rhtml'
+
+[emacs-dbgr]
+checkout = git clone 'git://github.com/rocky/emacs-dbgr.git' 'emacs-dbgr'
+
+[mustache-mode]
+checkout = git clone 'git://github.com/mustache/emacs.git' 'mustache-mode'
