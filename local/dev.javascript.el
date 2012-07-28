@@ -36,9 +36,15 @@
 ;;
 ;; Jade and Stylus
 ;;
-(require 'sws-mode)
-(require 'jade-mode)    
+(autoload 'sws-mode  "sws-mode"  "SWS" t)
+(autoload 'jade-mode "jade-mode" "Jade Templates" t)
+(autoload 'mustache-mode "mustache-mode" "Mustache Templates" t)
+
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache$" . mustache-mode))
+(add-to-list 'auto-mode-alist '("\\.handlebars$" . mustache-mode))
+(add-to-list 'auto-mode-alist '("\\.hbs$" . mustache-mode))
+(add-to-list 'auto-mode-alist '("\\.handlebars$" . mustache-mode))
 
 (setq js-indent-level 2)

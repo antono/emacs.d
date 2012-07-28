@@ -115,10 +115,10 @@
 
 ;; (set-face-attribute 'default nil :font "Terminus-14")
 ;; (set-face-attribute 'default nil :font "Inconsolata" :height 130)
-(set-face-attribute 'default nil :font "Ubuntu Mono" :height 140)
+;; (set-face-attribute 'default nil :font "Ubuntu Mono" :height 140)
 ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 110)
-;; (set-face-attribute 'default nil :font "Liberation Mono" :height 125)
-
+(set-face-attribute 'default nil :font "Liberation Mono" :height 125)
+;; (set-face-attribute 'default nil :font "Liberation Mono" :height 140)
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/twilight-theme")
 

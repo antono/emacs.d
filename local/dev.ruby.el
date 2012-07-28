@@ -1,9 +1,4 @@
-(require 'slim-mode)
-(require 'yaml-mode)
-(require 'feature-mode)
-(require 'haml-mode)
 (require 'yari)
-(require 'rspec-mode)
 (require 'hideshow)
 
 (add-to-list 'hs-special-modes-alist
@@ -15,10 +10,19 @@
           (add-to-list 'auto-mode-alist `(,pattern . ruby-mode)))
         '("Gemfile$" "config.ru$" "Rakefile$" "Guardfile$" "Capfile$" "*\.rb" "\\.rake$" "\\.gemspec$"))
 
+(autoload 'rhtml-mode   "rhtml-mode"   "RHTML" t)
+(autoload 'slim-mode    "slim-mode"    "Slim Templates" t)
+(autoload 'yaml-mode    "yaml-mode"    "YAML Support" t)
+(autoload 'haml-mode    "haml-mode"    "HAML Support" t)
+(autoload 'rspec-mode   "rspec-mode"   "Rspec Support" t)
+(autoload 'feature-mode "feature-mode" "Cucumber Support" t)
+
 (add-to-list 'auto-mode-alist '("\\.ya?ml$"   . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.md$"      . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
 (add-to-list 'auto-mode-alist '("\\.hamstache$" . haml-mode))
+(add-to-list 'auto-mode-alist '("\\.rhtml$" . rhtml-mode))
+(add-to-list 'auto-mode-alist '("\\.html\.erb$" . rhtml-mode))
 
 (eval-after-load 'ruby-mode
   '(progn

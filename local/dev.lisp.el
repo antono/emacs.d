@@ -7,6 +7,11 @@
   (add-hook
    (intern (concat (symbol-name x) "-mode-hook")) 'run-coding-hook))
  
+
+;; Extensions
+
+(add-to-list 'auto-mode-alist '("\\.s[pl]s$"   . scheme-mode))
+
 ;;
 ;; Paredit
 ;;
