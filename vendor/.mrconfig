@@ -92,9 +92,6 @@ checkout = git clone 'http://www.dr-qubit.org/git/undo-tree.git' 'undo-tree'
 [sauron]
 checkout = git clone 'git://github.com/djcb/sauron.git' 'sauron'
 
-[dictem]
-checkout = git clone 'git://github.com/cheusov/dictem.git' 'dictem'
-
 [perspective-el]
 checkout = git clone 'git://github.com/nex3/perspective-el.git' 'perspective-el'
 
@@ -124,3 +121,9 @@ checkout = git clone 'git://github.com/rocky/emacs-dbgr.git' 'emacs-dbgr'
 
 [mustache-mode]
 checkout = git clone 'git://github.com/mustache/emacs.git' 'mustache-mode'
+
+[android-mode]
+checkout = git clone 'git://github.com/remvee/android-mode.git' 'android-mode'
+
+[arduino-mode]
+checkout = git clone 'git://github.com/bookest/arduino-mode.git' 'arduino-mode'
