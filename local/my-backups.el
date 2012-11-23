@@ -18,8 +18,7 @@
 ;; save autosave and backup files centrally instead of clutering projects
 (defvar dotfiles-tmp-dir (concat dotfiles-dir "var/tmp/"))
 
-(setq
- savehist-file (concat dotfiles-tmp-dir "/history.el")
- backup-directory-alist         `(("." . ,(concat dotfiles-tmp-dir "backups")))
- auto-save-list-file-prefix     (concat dotfiles-tmp-dir "auto-save-sessions/")
- auto-save-file-name-transforms `((".*" ,(concat dotfiles-tmp-dir "auto-save-files/") t)))
+(setq savehist-file (concat dotfiles-tmp-dir "/history.el")
+      backup-directory-alist `(("." . ,(concat dotfiles-tmp-dir "backups")))
+      auto-save-list-file-prefix (concat dotfiles-tmp-dir "auto-save-sessions/")
+      auto-save-file-name-transforms `((".*" ,(concat dotfiles-tmp-dir "auto-save-files/") t)))

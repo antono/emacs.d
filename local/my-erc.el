@@ -8,11 +8,9 @@
            "#clojure"
            "#shelr"
            "#guile"
-           "#beam.js"
+           "#scheme"
            "#hurd"
            "##esperanto"
-           "#node.js"
-           "#synapse"
            "#zappajs"
            "#ubuntu-by"
            "#rubyonrails")

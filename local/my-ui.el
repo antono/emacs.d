@@ -44,7 +44,17 @@
   (setq frame-title-format '(buffer-file-name "Emacs: %f" ("%b")))
   (tooltip-mode t)
   (mouse-wheel-mode t)
-  (blink-cursor-mode -1))
+  (blink-cursor-mode -1)
+  ;; (set-face-attribute 'default nil :font "Terminus-10")
+  ;; (set-face-attribute 'default nil :font "Inconsolata" :height 150)
+  ;; (set-face-attribute 'default nil :font "Ubuntu Mono" :height 140)
+  ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 110)
+  ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 134)
+  (set-face-attribute 'default nil :font "Liberation Mono" :height 150)
+
+  ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 140)
+  ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/twilight-theme")
+  )
 
 (add-to-list 'safe-local-variable-values '(whitespace-line-column . 80))
 
@@ -95,12 +105,7 @@
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
 
-(setq initial-scratch-message ";;; 
-;;;     This is scratch buffer 
-;;;
-
-
-")
+(setq initial-scratch-message ";; Scratch elisp buffer")
 
 (setq linum-format
       (lambda (line)
@@ -113,14 +118,6 @@
          'linum)))
 
 
-;; (set-face-attribute 'default nil :font "Terminus-14")
-;; (set-face-attribute 'default nil :font "Inconsolata" :height 130)
-;; (set-face-attribute 'default nil :font "Ubuntu Mono" :height 140)
-;; (set-face-attribute 'default nil :font "Liberation Mono" :height 110)
-(set-face-attribute 'default nil :font "Liberation Mono" :height 125)
-;; (set-face-attribute 'default nil :font "Liberation Mono" :height 140)
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/twilight-theme")
 
 (load-theme 'wombat)
 

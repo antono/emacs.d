@@ -1,8 +1,9 @@
 ;; mu4e
 
-(add-to-list 'load-path "~/Code/mu/emacs")
+(add-to-list 'load-path "~/Code/mu/mu4e")
 
 (require 'mu4e)
+
 (require 'mu4e-speedbar)
 
 (setq user-full-name "Antono Vasiljev"
@@ -15,10 +16,12 @@
       mu4e-sent-folder   "/sent"
       mu4e-drafts-folder "/drafts"
       mu4e-trash-folder  "/trash"
+      mu4e-view-show-images t
       mu4e-html2text-command "html2text -utf8 -width 72"
       mu4e-maildir-shortcuts '(("/Archive"     . ?a)
                                ("/INBOX"       . ?i)
                                ("/sent"        . ?s))
+      ;; mu4e-use-fancy-chars t
       mu4e-get-mail-command "offlineimap"
       mu4e-headers-fields '((:date          .  25)
                             (:flags         .   6)
@@ -30,7 +33,11 @@
 
 (setq send-mail-function 'smtpmail-send-it
       starttls-use-gnutls t
-      smtpmail-starttls-credentials '(("mail.antono.info" 587 "antono" nil))
+      smtpmail-stream-type 'starttls
+      smtpmail-auth-credentials '(("mail.antono.info" 587 nil nil))
+      smtpmail-auth-credentials '(("mail.antono.info" 587 "antono" nil))
       smtpmail-default-smtp-server "mail.antono.info"
+      smtpmail-smtp-server "mail.antono.info"
+      smtpmail-smtp-user "antono"
       smtpmail-local-domain "antono.info"
       user-full-name "Antono Vasiljev")

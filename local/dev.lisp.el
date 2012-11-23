@@ -1,12 +1,9 @@
 ;;
 ;; Coding Common
 ;;
-
 (dolist (x '(scheme emacs-lisp lisp clojure))
-  (when window-system)
   (add-hook
    (intern (concat (symbol-name x) "-mode-hook")) 'run-coding-hook))
- 
 
 ;; Extensions
 
@@ -45,3 +42,8 @@
 ;;
 (eval-after-load 'find-file-in-project
   '(add-to-list 'ffip-patterns "*.clj"))
+ 
+(when (not (package-installed-p 'nrepl))
+  (package-install 'nrepl))
+
+

@@ -1,6 +1,6 @@
 (require 'dictionary)
 
-(setq dictionary-server "localhost")
+(setq dictionary-server "dict.antono.info")
 
 (global-dictionary-tooltip-mode 1)
 (dictionary-tooltip-mode 1)
