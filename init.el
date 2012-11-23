@@ -63,6 +63,8 @@
 (load custom-file 'noerror)
 
 (if (file-exists-p user-specific-dir)
-    (mapc #'load (directory-files user-specific-dir t ".*el$")))
+    (mapc #'load (directory-files user-specific-dir t ".*el")))
 
 ;;; init.el ends here
+(put 'ido-exit-minibuffer 'disabled nil)
+(put 'downcase-region 'disabled nil)

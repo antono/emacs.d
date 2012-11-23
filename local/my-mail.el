@@ -34,7 +34,6 @@
 (setq send-mail-function 'smtpmail-send-it
       starttls-use-gnutls t
       smtpmail-stream-type 'starttls
-      smtpmail-auth-credentials '(("mail.antono.info" 587 nil nil))
       smtpmail-auth-credentials '(("mail.antono.info" 587 "antono" nil))
       smtpmail-default-smtp-server "mail.antono.info"
       smtpmail-smtp-server "mail.antono.info"
