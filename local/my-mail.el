@@ -3,7 +3,6 @@
 (add-to-list 'load-path "~/Code/mu/mu4e")
 
 (require 'mu4e)
-
 (require 'mu4e-speedbar)
 
 (setq user-full-name "Antono Vasiljev"
