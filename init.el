@@ -1,3 +1,4 @@
+(setenv "XDG_CONFIG_HOME" nil)
 (server-start)
 
 ;; Quick UI cleanup
