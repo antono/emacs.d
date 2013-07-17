@@ -1,6 +1,3 @@
-(global-set-key (kbd "M-x")     'smex)
-(global-set-key (kbd "M-X")     'smex-major-mode-commands)
-
 (global-set-key (kbd "s-l")     'helm-mini)
 (global-set-key (kbd "C-S-s-l") 'helm-locate)
 (global-set-key (kbd "s-i")     'helm-imenu)
