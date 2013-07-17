@@ -35,9 +35,6 @@ checkout = git clone 'git://randomsample.de/minimap.git' 'minimap'
 [org-mode]
 checkout = git clone 'git://orgmode.org/org-mode.git' 'org-mode'
 
-[nxhtml]
-checkout = bzr branch 'bzr+ssh://bazaar.launchpad.net/%2Bbranch/nxhtml/' 'nxhtml'
-
 [geiser]
 checkout = git clone 'https://github.com/jaor/geiser.git' 'geiser'
 
@@ -73,9 +70,6 @@ checkout = git clone 'https://github.com/magnars/multiple-cursors.el' 'multiple-
 
 [rinari]
 checkout = git clone 'git://github.com/eschulte/rinari.git' 'rinari'
-
-[rsense]
-checkout = git clone 'git://github.com/m2ym/rsense.git' 'rsense'
 
 [rspec-mode]
 checkout = git clone 'git://github.com/pezra/rspec-mode.git' 'rspec-mode'

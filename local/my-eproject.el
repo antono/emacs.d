@@ -2,12 +2,15 @@
 (require 'eproject-extras)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/eproject/contrib/")
-(autoload 'helm-eproject "helm-eproject" "Helm for eproject files" t)
-(autoload 'eproject-tags "eproject-tags" "etags for eproject" t)
+(require 'helm-eproject)
+(require 'eproject-tags)
+(require 'eproject-tasks)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/eproject/lang/")
 (require 'eproject-ruby)
 (require 'eproject-ruby-on-rails)
+(require 'eproject-android)
+(require 'eproject-arduino)
 
 ;; Project Types
 ;; https://github.com/jrockway/eproject/wiki/ProjectTypes

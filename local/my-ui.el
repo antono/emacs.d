@@ -1,6 +1,7 @@
 ;;
 ;; We'll try to emulate Vim UI and behavior as close as possible
 ;;
+
 ;; As advanced user You don't need this
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode 1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1)) ;; it's ok in unity
@@ -50,7 +51,7 @@
   ;; (set-face-attribute 'default nil :font "Ubuntu Mono" :height 140)
   ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 110)
   ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 134)
-  (set-face-attribute 'default nil :font "Liberation Mono" :height 150)
+  (set-face-attribute 'default nil :font "Liberation Mono" :height 120) 
 
   ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 140)
   ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/twilight-theme")
@@ -128,6 +129,10 @@
 
 ;; Draw line feed ^L as line!
 (require 'pp-c-l)
+
+;; Powerline
+(require 'powerline)
+(powerline-default-theme)
 
 ;;
 ;; Mouse pointer tweaks

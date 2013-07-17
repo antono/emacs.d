@@ -1,10 +1,10 @@
 ;; mu4e
 
-(add-to-list 'load-path "~/Code/mu/mu4e")
+;; (add-to-list 'load-path "~/Code/mu/mu4e")
 
-(require 'mu4e)
+;; (require 'mu4e)
 
-(require 'mu4e-speedbar)
+;; (require 'mu4e-speedbar)
 
 (setq user-full-name "Antono Vasiljev"
       user-mail-address "self@antono.info"
