@@ -137,8 +137,8 @@
 ;;
 ;; Mouse pointer tweaks
 ;;
-(mouse-avoidance-mode 'none)    ;; turn it off
-(mouse-avoidance-mode 'jump)    ;; jump away randomly when approached
-(mouse-avoidance-mode 'banish)  ;; jump to corner when typing
-(mouse-avoidance-mode 'exile)   ;; jump to corner when approached
-(mouse-avoidance-mode 'animate)
+;; (mouse-avoidance-mode 'none)    ;; turn it off
+;; (mouse-avoidance-mode 'jump)    ;; jump away randomly when approached
+;; (mouse-avoidance-mode 'banish)  ;; jump to corner when typing
+;; (mouse-avoidance-mode 'exile)   ;; jump to corner when approached
+;; (mouse-avoidance-mode 'animate)

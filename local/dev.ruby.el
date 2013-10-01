@@ -23,6 +23,7 @@
 (add-to-list 'auto-mode-alist '("\\.hamstache$" . haml-mode))
 (add-to-list 'auto-mode-alist '("\\.rhtml$"     . rhtml-mode))
 (add-to-list 'auto-mode-alist '("\\.html\.erb$" . rhtml-mode))
+(add-to-list 'auto-mode-alist '("\\.rabl$"      . ruby-mode))
 
 (eval-after-load 'ruby-mode
   '(progn
