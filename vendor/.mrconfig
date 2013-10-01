@@ -41,9 +41,6 @@ checkout = git clone 'https://github.com/jaor/geiser.git' 'geiser'
 [helm]
 checkout = git clone 'https://github.com/emacs-helm/helm.git' 'helm'
 
-[rudel]
-checkout = bzr branch 'bzr://rudel.bzr.sourceforge.net/bzrroot/rudel/trunk/' 'rudel'
-
 [eproject]
 checkout = git clone 'git://github.com/jrockway/eproject.git' 'eproject'
 
@@ -55,12 +52,6 @@ checkout = git clone 'https://github.com/nex3/haml-mode.git' 'haml-mode'
 
 [jade-mode]
 checkout = git clone 'https://github.com/brianc/jade-mode.git' 'jade-mode'
-
-[js3-mode]
-checkout = git clone 'https://github.com/thomblake/js3-mode.git' 'js3-mode'
-
-[magit]
-checkout = git clone 'git://github.com/magit/magit.git' 'magit'
 
 [mo-git-blame]
 checkout = git clone 'git://github.com/mbunkus/mo-git-blame.git' 'mo-git-blame'
