@@ -45,6 +45,7 @@
 ;; Package.el
 ;;
 (setq package-archives '(("ELPA"      . "http://tromey.com/elpa/")
+                         ("MELPA"     . "http://melpa.milkbox.net/packages/")
                          ("GNU"       . "http://elpa.gnu.org/packages/")
                          ("Marmalade" . "http://marmalade-repo.org/packages/")))
 
