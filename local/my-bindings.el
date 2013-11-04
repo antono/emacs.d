@@ -5,8 +5,8 @@
 (global-set-key (kbd "s-t")     'helm-eproject-tasks)
 
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
-;; (global-set-key (kbd "s-e")     'speedbar-get-focus)
-(global-set-key (kbd "s-e")     'sr-speedbar-toggle)
+(global-set-key (kbd "s-r")     'revert-buffer)
+(global-set-key (kbd "s-e")     'speedbar-get-focus)
 (global-set-key (kbd "s-b")     'eproject-ibuffer)
 (global-set-key (kbd "s-s")     'dictionary-search)
 (global-set-key (kbd "s-L")     'helm-eproject)
@@ -41,7 +41,8 @@
 (define-key global-map (kbd "C--") 'text-scale-decrease)
 
 ;; Expansions
-(global-set-key (kbd "M-/") 'hippie-expand)
+(global-set-key (kbd "M-/") 'company-complete)
+(global-set-key (kbd "M-?") 'hippie-expand)
 
 ;; Start shell or switch to it if it's active.
 (global-set-key (kbd "C-x m") 'shell)
