@@ -8,7 +8,7 @@
 
 (mapcar (lambda (pattern)
           (add-to-list 'auto-mode-alist `(,pattern . ruby-mode)))
-        '("Gemfile$" "config.ru$" "Rakefile$" "Guardfile$" "Capfile$" "*\.rb" "\\.rake$" "\\.gemspec$"))
+        '("Gemfile$" "Cheffile$" "Berksfile$" "config.ru$" "Rakefile$" "Guardfile$" "Capfile$" "*\.rb" "\\.rake$" "\\.gemspec$"))
 
 (autoload 'rhtml-mode   "rhtml-mode"   "RHTML" t)
 (autoload 'slim-mode    "slim-mode"    "Slim Templates" t)

@@ -41,7 +41,12 @@
 (fringe-mode '(0 . 8)) ;; Right fringe only
 
 ;; Title and cursor
-(when window-system
+;; (when window-system
+;;   (apply-my-title-cursor-and-face-settings))
+
+
+(defun apply-my-title-cursor-and-face-settings ()
+  "Tune my emacs..."
   (setq frame-title-format '(buffer-file-name "Emacs: %f" ("%b")))
   (tooltip-mode t)
   (mouse-wheel-mode t)
@@ -51,11 +56,16 @@
   ;; (set-face-attribute 'default nil :font "Ubuntu Mono" :height 140)
   ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 110)
   ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 134)
-  (set-face-attribute 'default nil :font "Liberation Mono" :height 120) 
-
   ;; (set-face-attribute 'default nil :font "Liberation Mono" :height 140)
-  ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/twilight-theme")
-  )
+  (set-face-attribute 'default nil :font "Liberation Mono" :height 150))
+
+(defun ui-setup () 
+ (when window-system
+  (apply-my-title-cursor-and-face-settings)))
+
+(ui-setup)
+
+;; (add-to-list 'after-make-frame-functions 'ui-setup) ;; WTF?
 
 (add-to-list 'safe-local-variable-values '(whitespace-line-column . 80))
 
@@ -119,13 +129,7 @@
          'linum)))
 
 
-
 (load-theme 'wombat)
-
-;; function defined only in my patched emacs. see patch:
-;; http://lists.gnu.org/archive/html/bug-gnu-emacs/2012-05/msg00862.html
-(if (fboundp 'application-prefer-dark-theme)
-    (application-prefer-dark-theme 1))
 
 ;; Draw line feed ^L as line!
 (require 'pp-c-l)

@@ -22,7 +22,6 @@
 (global-set-key (kbd "s-p") 'persp-next)
 (global-set-key (kbd "s-n") 'persp-prev)
 
-
 ;; Kinda Ctrl+^ in Vim
 (define-key global-map "\C-^"
   (lambda ()

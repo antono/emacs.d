@@ -3,7 +3,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/vendor/eproject/contrib/")
 (require 'helm-eproject)
-(require 'eproject-tags)
+;; (require 'eproject-tags)
 (require 'eproject-tasks)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/eproject/lang/")
